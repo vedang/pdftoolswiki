@@ -1,0 +1,16 @@
+* The PDF Tools Wiki
+
+This is the PDF Tools Wiki. It is built from the contents of the ~README.org~ file in https://github.com/vedang/pdf-tools using the ~ox-neuron~ exporter.
+
+The content of this Wiki will always be in sync with the source (maintained in the ~pdf-tools~ repo in ~README.org~ and ~docs/*.org~ files). There are two ways in which readers can contribute to the Wiki:
+
+1. From the website:
+   - Go to https://pdftools.wiki/impulse.html
+   - Search for the note you want to edit.
+   - Click the edit button at the bottom of the post. This will bring you to the right note in Github.
+   - Fork the Wiki to your account, make the changes and submit a PR.
+
+2. From the ~pdf-tools~ source:
+   - Clone the ~pdf-tools~ source to your account.
+   - Make the relevant changes to the ~README.org~ file or to any of the ~docs/*.org~ files.
+   - Submit a PR
