@@ -1,8 +1,19 @@
 * The PDF Tools Wiki
+:PROPERTIES:
+:CREATED:  [2022-01-06 Thu 18:49]
+:ID:       c82d996e-9a56-4667-8a76-eff7270fac2d
+:END:
 
-This is the PDF Tools Wiki. It is built from the contents of the ~README.org~ file in https://github.com/vedang/pdf-tools using the ~ox-neuron~ exporter.
+This is the PDF Tools Wiki. It is built from the contents of the ~README.org~ file in https://github.com/vedang/pdf-tools using the [[https://github.com/vedang/ox-neuron][ox-neuron]] exporter.
 
-The content of this Wiki will always be in sync with the source (maintained in the ~pdf-tools~ repo in ~README.org~ and ~docs/*.org~ files). There are two ways in which readers can contribute to the Wiki:
+The content of this Wiki will always be in sync with the source (maintained in the ~pdf-tools~ repo in ~README.org~ and ~docs/*.org~ files).
+
+** Contributing to the Wiki
+:PROPERTIES:
+:CREATED:  [2022-01-06 Thu 18:50]
+:ID:       4122ada3-a2a9-425e-8eff-841eaddb63bf
+:END:
+There are two ways in which readers can contribute to the Wiki:
 
 1. From the website:
    - Go to https://pdftools.wiki/impulse.html
@@ -14,3 +25,23 @@ The content of this Wiki will always be in sync with the source (maintained in t
    - Clone the ~pdf-tools~ source to your account.
    - Make the relevant changes to the ~README.org~ file or to any of the ~docs/*.org~ files.
    - Submit a PR
+
+** Editing org files: Special headers and link types
+:PROPERTIES:
+:CREATED:  [2022-01-06 Thu 18:50]
+:ID:       36f50c3d-5e18-4365-b83a-3d3f785d4164
+:END:
+If you are creating new headings in the source files (~org-mode~ files), you need to create the ~ID~ property for the new headings. This can be done by running ~M-x org-id-get-create~ on the new heading.
+
+For referencing different sections across the content, you should use ~id:~ links. This is the canonical way to link two subtrees in ~org-mode~. You can copy an ID link by going to the subtree you want to link to and running the command ~org-store-link~ (with ~C-u C-u C-c l~). Once you are captured a link, You can paste the link in the relevant text by running the command ~org-insert-link~ (with ~C-c C-l~). Users of [[https://github.com/org-roam/org-roam][org-roam]] will be familiar with this.
+
+*** Advanced link types: Parent/Child links
+:PROPERTIES:
+:CREATED:  [2022-01-06 Thu 18:59]
+:ID:       80201e04-e1c7-4c97-8428-632712b864af
+:END:
+
+If you are not a user of [[https://github.com/Kungsgeten/org-brain][org-brain]], you can safely ignore this section.
+
+If you are a user of ~org-brain~, then you'll be happy to know that ~ox-neuron~ (and therefore this Wiki) also supports parent/child relationships. You can add parent/child relationships between subtrees using the `brain-child:` and
+`brain-parent:` link types.
