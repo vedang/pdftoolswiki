@@ -33,7 +33,7 @@ There are two ways in which readers can contribute to the Wiki:
 :END:
 If you are creating new headings in the source files (~org-mode~ files), you need to create the ~ID~ property for the new headings. This can be done by running ~M-x org-id-get-create~ on the new heading.
 
-For referencing different sections across the content, you should use ~id:~ links. This is the canonical way to link two subtrees in ~org-mode~. You can copy an ID link by going to the subtree you want to link to and running the command ~org-store-link~ (with ~C-u C-u C-c l~). Once you are captured a link, You can paste the link in the relevant text by running the command ~org-insert-link~ (with ~C-c C-l~). Users of [[https://github.com/org-roam/org-roam][org-roam]] will be familiar with this.
+For referencing different sections across the content, you should use ~id:~ links. This is the canonical way to link two subtrees in ~org-mode~. You can copy an ID link by going to the subtree you want to link to and running the command ~org-store-link~ (with ~C-u C-u C-c l~). Once you have captured a link, you can paste the link by running the command ~org-insert-link~ (with ~C-c C-l~). Users of [[https://github.com/org-roam/org-roam][org-roam]] will be familiar with this.
 
 *** Advanced link types: Parent/Child links
 :PROPERTIES:
