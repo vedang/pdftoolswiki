@@ -4,30 +4,8 @@ author: ["Vedang Manerikar"]
 draft: false
 ---
 
-You'll need GNU Emacs &ge; 24.3 and some form of a GNU/Linux OS. Other operating systems are not officially supported, but `pdf-tools` is known to work on many of them. See links below for more details. The following instructions assume a Debian-based system.
+If you install `pdf-tools` via NonGNU ELPA or MELPA, you don't need to worry about this separate server installation at all. However, if you have a non-standard installation, please refer to the links below for installing `epdfinfo` server prerequisites.
 
-First make sure a suitable build-system is installed. We need at least a C/C++ compiler (both `gcc` and `g++`), `make`, `automake` and `autoconf`.
+Note: You'll need GNU Emacs &ge; 26.1 and some form of a GNU/Linux OS. Other operating systems are not officially supported, but `pdf-tools` is known to work on many of them.
 
-Next we need to install a few libraries `pdf-tools` depends on, some of which are probably already on your system.
-
-```sh
-$ sudo apt install libpng-dev zlib1g-dev libpoppler-glib-dev libpoppler-private-dev
-```
-
-On some older Ubuntu systems, the final command will possibly give an error. This should be no problem, since in some versions this package was contained in the main package `libpoppler-dev`. Also note, that `zlib1g-dev` was for a long time called `libz-dev`, which it still may be on your system.
-
-Debian wheezy comes with `libpoppler` version `0.18`, which is pretty old. The minimally required version is `0.16`, but some features of `pdf-tools` depend on a more recent version of this library. See the following table for what they are and what version they require.
-
-| You want to ...                           | Required version |
-|-------------------------------------------|------------------|
-| ... create and modify text annotations.   | &ge; 0.19.4      |
-| ... search case-sensitive.                | &ge; 0.22        |
-| ... create and modify markup annotations. | &ge; 0.26        |
-
-In case you decide to install `libpoppler` from source, make sure to run its configure script with the `--enable-xpdf-headers` option.
-
-Finally there is one feature (following links of a PDF document by plain keystrokes) which requires imagemagick's convert utility. This requirement is optional and you may install it like so:
-
-```sh
-$ sudo apt install imagemagick
-```
+Similarly, package-managers are not officially supported, but `pdf-tools` is known to be available on some of them. See the section on [[fb5cef15|Installing the `epdfinfo` server from package managers]] to avoid manual installation of server / server prerequisites
