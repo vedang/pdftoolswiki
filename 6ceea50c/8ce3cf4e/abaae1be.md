@@ -4,12 +4,12 @@ author: ["Vedang Manerikar"]
 draft: false
 ---
 
-First make sure a suitable build-system is installed. We need at least a C/C++ compiler (both `gcc` and `g++`), `make`, `automake` and `autoconf`.
+First make sure a suitable build-system is installed. We need at least a C compiler (`gcc`), `make`, `automake` and `autoconf`.
 
 Next we need to install a few libraries `pdf-tools` depends on, some of which are probably already on your system.
 
 ```sh
-$ sudo apt install libpng-dev zlib1g-dev libpoppler-glib-dev libpoppler-private-dev
+$ sudo apt install libpng-dev zlib1g-dev libpoppler-glib-dev
 ```
 
 On some older Ubuntu systems, the final command will possibly give an error. This should be no problem, since in some versions this package was contained in the main package `libpoppler-dev`. Also note, that `zlib1g-dev` was for a long time called `libz-dev`, which it still may be on your system.
