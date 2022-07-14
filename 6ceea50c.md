@@ -6,8 +6,7 @@ dirtree:
   display: false
 ---
 
-Installing this package via NonGNU ELPA or MELPA or any of the other package managers is straightforward and should just work.
-`pdf-tools` requires a server `epdfinfo` to run against, which it will try to compile and build when it is activated for the first time.
+Installing this package via NonGNU ELPA or MELPA or any of the other package managers is straightforward and should just work. `pdf-tools` requires a server `epdfinfo` to run against, which it will try to compile and build when it is activated for the first time.
 
 You should not require any manual changes. The documentation below is **only if you are installing from source**, or for troubleshooting / debugging purposes.
 

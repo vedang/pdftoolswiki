@@ -4,7 +4,7 @@ author: ["Vedang Manerikar"]
 draft: false
 ---
 
-If you install `pdf-tools` via NonGNU ELPA or MELPA, **you don't need to worry about this separate server installation at all**.  However, if you have a non-standard installation, please refer to the links below for installing `epdfinfo` server prerequisites.
+If you install `pdf-tools` via NonGNU ELPA or MELPA, **you don't need to worry about this separate server installation at all**. However, if you have a non-standard installation, please refer to the links below for installing `epdfinfo` server prerequisites.
 
 Note: You'll need GNU Emacs &ge; 26.1 and some form of a GNU/Linux OS. Other operating systems are not officially supported, but `pdf-tools` is known to work on many of them.
 
