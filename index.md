@@ -4,7 +4,7 @@ author: ["Vedang Manerikar"]
 draft: false
 ---
 
-PDF Tools is, among other things, a replacement of DocView for PDF files. The key difference is that pages are not pre-rendered by e.g. ghostscript and stored in the file-system, but rather created on-demand and stored in memory.
+PDF Tools is, among other things, a replacement of DocView for PDF files. The key difference is that pages are not pre-rendered by, say, `ghostscript` and stored in the file-system, but rather created on-demand and stored in memory.
 
 This rendering is performed by a special library named, for whatever reason, `poppler`, running inside a server program. This program is called `epdfinfo` and its job is to successively read requests from Emacs and produce the proper results, i.e. the PNG image of a PDF page.
 
